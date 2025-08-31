@@ -88,8 +88,7 @@ def main():
             new_q_value = old_q_value + (learning_rate * temporal_difference)
             q_values[old_row_index, old_column_index, action_index] = new_q_value
 
-    print('Training complete!')
-    print(q_values)
+    print('Training Done!')
     print(get_shortest_path(3, 16))
     
     path = get_shortest_path(3, 16)
